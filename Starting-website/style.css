@@ -10,9 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
 }
-
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -847,14 +845,13 @@ h4 {
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media all and (min-width: 1024px) and (max-width: 1366px)
+ {
     .b-parallax {
         background-attachment: scroll;
     }
